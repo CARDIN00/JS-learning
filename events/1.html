@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+  <h2>Amazing images</h2>
+  <div>
+    <ul id="images">
+      <li> <img width ="200px" id="photoshop" src="https://images.pexels.com/photos/5725859/pexels-photo-5725859.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="photoshop" ></li>
+
+      <li> <img width ="200px" id="japan" src="https://images.pexels.com/photos/29534167/pexels-photo-29534167/free-photo-of-illuminated-hotel-sign-in-karlsruhe-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" ></li>
+
+      <li> <img width ="200px" id="river" src="https://images.pexels.com/photos/20406164/pexels-photo-20406164/free-photo-of-cloud-over-lake-bled-in-slovenia.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="" ></li>
+
+      <li> <img width ="200px" id="prayer" src="https://images.pexels.com/photos/29356205/pexels-photo-29356205/free-photo-of-serene-misty-mountain-landscape-scene.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="" ></li>
+
+      <li> <img width ="200px" id="mist" src="https://images.pexels.com/photos/29592743/pexels-photo-29592743/free-photo-of-historic-foggy-morning-in-auerbach.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="" ></li>
+
+      <li style="color: aliceblue;"><a href="http://google.com" id="google">Google</a></li>
+    </ul>
+  </div>
+</body>
+<script>
+  // document.getElementById('river').onclick = function(){
+  //   alert('river');
+  // }
+  // document.getElementById('prayer').addEventListener('click',function(){
+  //   alert("river clicked")
+  // })
+  //type, timestamp, defaultPrevented
+  //target, toElement, srceElement, currentTarget
+  //clientX, clientY,screenX, screenY
+  //altkew,ctrlkey,shiftkey,keycode
+
+  document.getElementById('images').addEventListener('click',function(e){
+    console.log("click inside the ul");
+  })
+
+  document.getElementById('river').addEventListener('click',function(e){
+    console.log("owl clicked");
+  })
+
+</script>
+</html>
